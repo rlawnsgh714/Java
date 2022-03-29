@@ -1,0 +1,25 @@
+package kr.hs.dgsw.hellojava.dept2;
+
+public class Cat {
+	String name;
+	String color;
+	String eyecolor;
+	String eat;
+	String play;
+	String gender;
+	int age;
+	
+	public void eat(String eat) {
+		System.out.printf("%s이(가) %를 먹는다",name,eat);
+	}
+	
+	public void play(String play) {
+		System.out.printf("%s이(가) %s 을(를) 가지고 논다",name,play);
+	}
+	
+	public void postInformation() {
+		System.out.printf("이름 : %s\n",name);
+		System.out.printf("성별 : %s\n",gender);
+		System.out.printf("나이 : %d\n",age);
+	}
+}

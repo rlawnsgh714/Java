@@ -1,0 +1,5 @@
+package kr.hs.dgsw.hellojava.dept2;
+
+public class Dog extends HelloTester {
+
+}

@@ -1,0 +1,12 @@
+package kr.hs.dgsw.Ex1;
+
+public class Start {
+	public static void main(String[] args) {
+		People kimyoonghi = new People();
+		People kimchulsu = new People();
+		
+		
+		kimyoonghi.BMI(165, 55);
+		kimchulsu.BMI(170, 90);
+	}
+}

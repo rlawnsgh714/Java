@@ -1,0 +1,9 @@
+package Hello;
+
+public class HelloTester2 {
+
+	public staitc void main(String[] args) {
+		Hello object = new Hello();
+		object.sayHello();
+	}
+}

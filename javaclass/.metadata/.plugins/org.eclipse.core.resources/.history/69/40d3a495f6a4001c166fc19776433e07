@@ -1,0 +1,12 @@
+package kr.hs.dgsw.hellojava.dept2;
+
+public class CatTester extends Cat {
+	public static void main(String[] args) {
+		Cat sham = new Cat();
+		Cat persian = new Cat();
+		
+		sham.name = "새벽";
+		sham.gender = "암컷";
+		sham.age = 4;
+	}
+}
