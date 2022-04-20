@@ -1,0 +1,8 @@
+package thread;
+
+public class main {
+	public static void main(String[] args) {
+		Thread1 mil = new Thread();
+		Thread t1 = new Thread(mil);
+	}
+}

@@ -1,0 +1,48 @@
+package ex0405;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+public class Member {
+	//db column 변수들
+	
+	private int id;
+	private String username;
+	private String password;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+	public Member doselectone(String id) {
+		Member member = new Member();
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		try {
+			con = DriverManager.getConnection(id);		
+		}catch(Excption e) {
+			
+		}
+		return new Member();
+	}
+	
+	//alt + shift + s -> r
+	
+	
+}

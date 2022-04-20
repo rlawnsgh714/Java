@@ -1,0 +1,61 @@
+package kr.hs.dgsw.java.dept2.d0413;
+
+public class Queue {
+
+    private final String[] buffer;
+    private int index;
+    private int number;
+
+    public Queue(String[] buffer) {
+        this.buffer = buffer;
+        this.index = number = 0;
+    }
+
+    public Queue() {
+        this(new String[10]);
+    }
+
+    public void add(String value) {
+        if (isFull()) {
+            return;
+        }
+        
+        buffer[number++] = value;
+    }
+
+    public String poll() {
+        if (isEmpty()) {
+            throw new IllegalStateException();
+        }
+
+        return buffer[index++];
+    }
+
+    public int getSize() {
+        return buffer.length;
+    }
+
+    public boolean isFull() {
+    	if(number == buffer.length) return true;
+    	else return false;
+    }
+
+    public boolean isEmpty() {
+    	if(index == number) return true;
+    	else return false; 
+    }
+
+    public static void main(String[] args) {
+        Queue queue = new Queue();
+
+        queue.add("Dog");
+        queue.add("Mouse");
+        queue.add("Dragonfly");
+
+        System.out.println(queue.poll());
+        System.out.println(queue.poll());
+        System.out.println(queue.poll());
+        // expect: Dog, Mouse, Dragonfly
+    }
+
+}

@@ -1,0 +1,18 @@
+package thread;
+
+public class main {
+	public static void main(String[] args) {
+		Thread1 mi1 = new Thread1();
+		Thread t1 = new Thread(mi1);
+		
+		Thread2 mi2 = new Thread2();
+		Thread t2 = new Thread(mi2);
+		
+		mi1.run();
+		mi2.run();
+		
+		for(int i=0;i<500;i++) {
+			System.out.printf("main Thread: %d \n",i);
+		}
+	}
+}

@@ -1,0 +1,24 @@
+package kr.hs.dgsw.java.dept2.d0413;
+
+public class ArrayStudy {
+	public void studyArray() {
+		int[] array1;
+		int array2[];
+	}
+	
+	/* 배열의 정의 */
+	{
+		String[] countries = new String[5];
+		
+		countries[0] = "Korea";
+		countries[1] = "Germany";
+		
+		countries[100] = "Japan";
+	}
+	
+	public static void main(String[] args) {
+		ArrayStudy study = new ArrayStudy();
+		study.studyArray();
+	}
+}
+
