@@ -1,5 +1,0 @@
-package kr.hs.dgsw.hellojava.dept2;
-
-public class CatTester extends Dog {
-
-}

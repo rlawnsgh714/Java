@@ -1,9 +1,0 @@
-package kr.hs.dgsw.hellojava.dept2;
-
-public class HelloTester {
-
-	public staitc void main(String[] args) {
-		Hello object = new Hello();
-		object.sayHello();
-	}
-}
